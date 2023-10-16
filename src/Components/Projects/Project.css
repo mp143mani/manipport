@@ -91,3 +91,6 @@
     margin: 0 auto; /* Center the image horizontally */
   }
   
+  .card-body a {
+    margin: 0.2rem; 
+  }

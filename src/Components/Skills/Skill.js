@@ -4,6 +4,7 @@ function Skill({ skill }) {
   const progressBarStyle = {
     width: `${skill.width}%`,
     fontSize: "18px", // Increase the font size to make the text larger
+    background: 'linear-gradient(90deg, rgb(0, 123, 255), rgb(234, 0, 255))', // Add linear gradient background
   };
 
   const progressContainerStyle = {

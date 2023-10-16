@@ -68,8 +68,8 @@ export default function Profile() {
           </div>
           <div className="profile-options">
             <button className="btn primary-btn"> Hire Me </button>
-            <a href="ehizcv.pdf" download="mani ehizcv.pdf">
-              <button className="btn primary-btn">Download</button>
+            <a href="ehizcv.pdf" target="_blank" download="mani ehizcv.pdf">
+              <button className="btn primary-btn" >Download</button>
             </a>
           </div>
         </div>

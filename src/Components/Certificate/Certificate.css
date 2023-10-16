@@ -8,3 +8,27 @@
     width: 100%;
     background-image: linear-gradient(#000000c9,rgb(9, 253, 245));
 }
+.card  {
+    background-color:#f7f7f7;
+    
+  
+  }
+  #projects{
+    padding-top: 100px;
+  }
+
+ 
+  
+  .card img{
+    height: 300px;
+    transition: 1s;
+  }
+
+  .inner{
+    overflow: hidden;
+  }
+
+  .card img:hover{
+    transform:scale(.9);
+    
+  }

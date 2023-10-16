@@ -1,53 +1,47 @@
 import React from "react";
 import Project from "./Project";
-import zen from '../../assets/image/zen.png'
-import sbadmin from '../../assets/image/it.jpg'
-
+import manilogo from "../../assets/image/Logo.0268ac4ba8f24691976d.png";
 
 function Appproject() {
-    let zenl ="https://manitechinstitution.netlify.app/"
-    let zenf ="https://github.com/mp143mani/frontend"
-    let zenb = "https://github.com/mp143mani/zen"
+  let mani1 = "https://zen--manitechinstitution.netlify.app/";
+  let mani2 = "https://github.com/mp143mani/frontend";
+  let mani3 = "https://github.com/mp143mani/zen";
 
-    let sbl ="https://frabjous-taiyaki-b98703.netlify.app/dashboard"
-    let sbf ="https://github.com/mp143mani/management"
-    
-    const projectdata= [
-        {
-            cardimg:sbadmin,
-            cardname:"ZEN dashboard",
-            carddes:"This project is online institution dashboard for Cordinator,teacher and student management system",
-            livebtn:zenl,
-            frontbtn:zenf,
-            backbtn:zenb
-        },
-        {
-            cardimg:sbadmin,
-            cardname:"ZEN dashboard",
-            carddes:"This project is online institution dashboard for Cordinator,teacher and student management system",
-            livebtn:zenl,
-            frontbtn:zenf,
-            backbtn:zenb
-        },
-        {
-            cardimg:sbadmin,
-            cardname:"Student and Teacher Manahement",
-            carddes:"This project is SB admin for student and teacher curd operation",
-            livebtn: sbl,
-            frontbtn:sbf
-            
-        }
-    ]
+  const projectdata = [
+    {
+      cardimg: manilogo,
+      cardname: "ManitechWorld",
+      carddes:
+        "This project is online institution dashboard for Cordinator,teacher and student management system",
+      livebtn: mani1,
+      frontbtn: mani2,
+      backbtn: mani3,
+    },
+    //   {
+    //       cardimg:"",
+    //       cardname:"",
+    //       carddes:"",
+    //       livebtn:"",
+    //       frontbtn:"",
+    //       backbtn:""
+    //   },
+    //   {
+    //     cardimg:"",
+    //     cardname:"",
+    //     carddes:"",
+    //     livebtn:"",
+    //     frontbtn:"",
+    //     backbtn:""
+    // }
+  ];
   return (
     <div className="container-fluid col-10  ">
-            <section id="project">
-                <h1 className="head">My Projects</h1>
-                <div className="row">
-          {
-            projectdata.map((e,i)=>{
-                return <Project projectdata={e} key={i}/>
-            })
-          }
+      <section id="project">
+        <h1 className="head">My Projects</h1>
+        <div className="row">
+          {projectdata.map((e, i) => {
+            return <Project projectdata={e} key={i} />;
+          })}
         </div>
       </section>
     </div>
