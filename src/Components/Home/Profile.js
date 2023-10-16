@@ -1,10 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {useTypewriter,Cursor} from 'react-simple-typewriter'
 // import Typical from "react-typical";
 import "./Profile.css";
 
 export default function Profile() {
   let navigate = useNavigate()
+  const [typei] = useTypewriter({
+    words:['Full stack Developer'],
+    loop:{},
+    typeSpeed:150,
+    delaySpeed:50
+  })
   return (
     <div className="profile-container" id="home">
       <div className="profile-parent">
@@ -13,7 +20,8 @@ export default function Profile() {
             <div className="colz-icon">
                 
               <a  target="_blank" onClick={()=>navigate('https://github.com/mp143mani')}>
-             <i className="fa-brands fa-github" style={{color: '#c2c2c2'}} />
+              <i className="fab fa-github fa-3x" style={{ color: '#c2c2c2' }}></i>
+
 
              
 
@@ -31,30 +39,17 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-details-role">
-            {/* <span className="primary-text">
-              {" "}
-              <h1>
-                {" "}
-                <Typical
-                  loop={Infinity}
-                  steps={[
-                    "Full stack Developer",
-                    5000,
-                    "UI/UX Designer",
-                    5000,
-                    //     "fddddddddds",
-                    //     2000,
-                    // "dfggrt",
-                    //     2000,
-                  ]}
-                  wrapper="p"
-                />
-              </h1>
+             <span className="primary-text">
+             <h1>
+              I'm a 
+              <span style={{fontWeight:"bold",color:"green",paddingLeft:"25px"}}>{typei}</span>
+             </h1>
+
               <span className="profile-role-tagline">
                 I have always had a great desire, becoming more of a person
                 where I can find challenges in the work environment
               </span>
-            </span> */}
+            </span> 
           </div>
           <div className="profile-options">
             <button className="btn primary-btn"> Hire Me </button>
