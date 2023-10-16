@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import "./Profile.css";
 
 export default function Profile() {
@@ -31,7 +31,7 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-details-role">
-            <span className="primary-text">
+            {/* <span className="primary-text">
               {" "}
               <h1>
                 {" "}
@@ -54,7 +54,7 @@ export default function Profile() {
                 I have always had a great desire, becoming more of a person
                 where I can find challenges in the work environment
               </span>
-            </span>
+            </span> */}
           </div>
           <div className="profile-options">
             <button className="btn primary-btn"> Hire Me </button>
