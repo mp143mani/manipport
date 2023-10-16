@@ -1,4 +1,4 @@
-.profile-container {
+.maincontainer {
     display: flex;
     align-items: center;
     text-align: center;
@@ -7,7 +7,7 @@
     min-height: fit-content;
   }
   
-  .profile-parent {
+  .profile2 {
     display: flex;
     align-items: center;
     color: aliceblue;
@@ -37,7 +37,7 @@
     color: var(--dark-orange);
   }
   
-  .profile-role-tagline {
+  .profile-role-info {
     font-size: 19px;
     margin: 5px 0 0 0;
     font-family: "Poppins Light";
@@ -49,8 +49,8 @@
   
   .profile-options .highlighted-btn:hover {
     margin: 0 0 0 28px;
-    background-color: cornsilk;
-    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(67, 162, 4);
   }
   
   .profile-picture {
@@ -118,7 +118,7 @@
     .profile-picture {
       margin: 0 !important;
     }
-    .profile-parent {
+    .profile2 {
       flex-direction: column-reverse;
       margin: 40px 0 0 0;
     }
@@ -148,7 +148,7 @@
     }
   }
   
-  .profile-container {
+  .maincontainer {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
