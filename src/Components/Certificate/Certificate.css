@@ -1,0 +1,10 @@
+.head{
+    text-align: center;
+    padding-top:145px;
+    margin-bottom: 20px;
+}
+
+.bt{
+    width: 100%;
+    background-image: linear-gradient(#000000c9,rgb(9, 253, 245));
+}
