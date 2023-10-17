@@ -4,7 +4,7 @@ function Skill({ skill }) {
   const progressBarStyle = {
     width: `${skill.width}%`,
     fontSize: "18px", // Increase the font size to make the text larger
-    background: 'linear-gradient(90deg, rgb(0, 123, 255), rgb(234, 0, 255))', // Add linear gradient background
+    background: 'linear-gradient(90deg, rgb(100, 183, 755), rgb(238, 45, 1255))', // Add linear gradient background
   };
 
   const progressContainerStyle = {
@@ -14,9 +14,9 @@ function Skill({ skill }) {
   return (
     <div>
       <h5>{skill.title}</h5>
-      <div className="progress" style={progressContainerStyle}>
+      <div className="progress rounded-circle" style={progressContainerStyle}>
         <div
-          className="progress-bar"
+          className="progress-bar rounded"
           role="progressbar"
           style={progressBarStyle}
           aria-valuenow={skill.width}

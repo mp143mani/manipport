@@ -2,6 +2,7 @@ import React from "react";
 import "./Certificate.css";
 
 function Certificate({ Certificatedata }) {
+  
   return (
     <div className="col-md-4 my-2">
       <div className="card shadow">

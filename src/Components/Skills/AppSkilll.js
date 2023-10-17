@@ -21,8 +21,8 @@ function AppSkilll() {
     },
     {
       title: "JavaScript",
-      percentage: "7",
-      width: "7",
+      percentage: "70",
+      width: "70",
     },
     {
       title: "React",

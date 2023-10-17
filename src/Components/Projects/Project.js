@@ -30,7 +30,7 @@ function Project({ projectdata }) {
               <a
                 href={projectdata.backbtn}
                 target="_blank"
-                className="btn btn-info my-2"
+                className="btn btn-success my-2"
               >
                 Backend
               </a>
