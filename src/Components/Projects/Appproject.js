@@ -5,17 +5,17 @@ import crm from "../../assets/image/crm.jpg";
 import veg from "../../assets/image/veg-combo-1.jpg"
 
 function Appproject() {
-  let mani1 = "https://master--adorable-griffin-ca3ebe.netlify.app/";
+  let mani1 = "https://adorable-griffin-ca3ebe.netlify.app/";
   let mani2 = "https://github.com/mp143mani/manitfronend.git";
   let mani3 = "https://github.com/mp143mani/manitbackend.git";
   let manibackl="https://backendmanitech.onrender.com/";
 
-  let crml = "https://transcendent-cannoli-a9ee6b.netlify.app/";
+  let crml = "https://crmcrm.netlify.app/";
   let crmf ="https://github.com/mp143mani/crmfront.git";
   let crmb="https://github.com/mp143mani/crmback.git";
   let crmbl ="https://backendcrm-66ya.onrender.com/";
 
-  let vegl = "https://enchanting-boba-34ad8f.netlify.app/";
+  let vegl = "https://vegetablemart.netlify.app/";
   let vegf ="https://github.com/mp143mani/pfrontend.git";
   let vegb ="https://github.com/mp143mani/pbackend.git";
   let vegbl="https://backendp-n8dl.onrender.com/";
