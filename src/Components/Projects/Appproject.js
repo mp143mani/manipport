@@ -5,10 +5,10 @@ import crm from "../../assets/image/crm.jpg";
 import veg from "../../assets/image/veg-combo-1.jpg"
 
 function Appproject() {
-  let mani1 = "https://zen--manitechinstitution.netlify.app/";
-  let mani2 = "https://github.com/mp143mani/frontend";
-  let mani3 = "https://github.com/mp143mani/zen";
-  let manibackl="https://zenstas.onrender.com/";
+  let mani1 = "https://master--adorable-griffin-ca3ebe.netlify.app/";
+  let mani2 = "https://github.com/mp143mani/manitfronend.git";
+  let mani3 = "https://github.com/mp143mani/manitbackend.git";
+  let manibackl="https://backendmanitech.onrender.com/";
 
   let crml = "https://transcendent-cannoli-a9ee6b.netlify.app/";
   let crmf ="https://github.com/mp143mani/crmfront.git";
