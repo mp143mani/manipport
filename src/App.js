@@ -6,7 +6,7 @@ import Appcertificate from "./Components/Certificate/Appcertificate";
 import Appproject from "./Components/Projects/Appproject";
 import Home from "./Components/Home/Home";
 import AppSkilll from "./Components/Skills/AppSkilll";
-import Myproject from "./Components/Projects/Myproject";
+
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
 
