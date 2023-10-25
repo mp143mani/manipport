@@ -3,6 +3,7 @@ import Project from "./Project";
 import manilogo from "../../assets/image/Logo.0268ac4ba8f24691976d.png";
 import crm from "../../assets/image/crm.jpg";
 import veg from "../../assets/image/veg-combo-1.jpg"
+import curdi from "../../assets/image/curd.png"
 
 function Appproject() {
   let mani1 = "https://adorable-griffin-ca3ebe.netlify.app/";
@@ -19,6 +20,11 @@ function Appproject() {
   let vegf ="https://github.com/mp143mani/pfrontend.git";
   let vegb ="https://github.com/mp143mani/pbackend.git";
   let vegbl="https://backendp-n8dl.onrender.com/";
+
+  let curdl ="https://master--fastidious-daifuku-5a1729.netlify.app/";
+  let curdf="https://github.com/mp143mani/fend.git";
+  let curdb="https://github.com/mp143mani/bend.git";
+  let curdbl="https://bend-stna.onrender.com/";
   const projectdata = [
     {
       cardimg: manilogo,
@@ -47,7 +53,16 @@ function Appproject() {
         frontbtn:vegf,
         backbtn:vegb,
         backbtnl:vegbl
-    }
+    },
+    {
+      cardimg:curdi,
+  cardname:"Mern stack Curd",
+      carddes:"A web application using MongoDB, Express, React, and Node.js that enables users to manage student records, including adding, viewing, updating, and deleting student information..",
+      livebtn:curdl,
+      frontbtn:curdf,
+      backbtn:curdb,
+      backbtnl:curdbl
+  }
   ];
   return (
     <div className="container-fluid col-10 ji">
