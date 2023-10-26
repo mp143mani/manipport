@@ -68,7 +68,7 @@ export default function Profile() {
           </div>
           <div className="profile-options">
             <button className="btn primary-btn"> Hire Me </button>
-            <a href="https://drive.google.com/file/d/1WZ12QKPunms1FNiBG3ovEI5l5EHt7LrB/view?usp=share_link" target="_blank" download="mani ehizcv.pdf">
+            <a href="https://drive.google.com/file/d/1sxexU0aCGuwgqsoUEpTLZlvyj_MJf71s/view?usp=sharing" target="_blank" download="mani ehizcv.pdf">
               <button className="btn primary-btn" >Download</button>
             </a>
           </div>
