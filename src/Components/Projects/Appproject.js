@@ -30,7 +30,7 @@ function Appproject() {
       cardimg: manilogo,
       cardname: "ManitechWorld",
       carddes:
-        "This project is online institution dashboard for Cordinator,teacher and student management system",
+        "This project is online institution dashboard for Cordinator,teacher and student management system,This project covered by  MongoDB, Express, React, and Node.js",
       livebtn: mani1,
       frontbtn: mani2,
       backbtn: mani3,
@@ -39,7 +39,7 @@ function Appproject() {
       {
           cardimg:crm,
           cardname:"customer relationship management system",
-          carddes:"A Customer Relationship Management (CRM) system is a software tool designed to help businesses manage and enhance their interactions and relationships with customers, enabling improved customer service and data-driven decision-making",
+          carddes:"A Customer Relationship Management (CRM) system is a software tool designed to help businesses manage and enhance their interactions and relationships with customers, enabling improved customer service and data-driven decision-making,This project Developed by using MongoDB, Express, React, and Node.js",
           livebtn:crml,
           frontbtn:crmf,
           backbtn:crmb,
@@ -48,7 +48,7 @@ function Appproject() {
       {
         cardimg:veg,
         cardname:"Kmart",
-        carddes:"An online vegetable shop is a web-based platform where customers can conveniently purchase fresh and diverse vegetables, often with home delivery services, providing a convenient and accessible way to access high-quality produce.",
+        carddes:"An online vegetable shop is a web-based platform where customers can conveniently purchase fresh and diverse vegetables, often with home delivery services, providing a convenient and accessible way to access high-quality produce.This project Developed by using MongoDB, Express, React, and Node.js",
         livebtn:vegl,
         frontbtn:vegf,
         backbtn:vegb,
@@ -56,7 +56,7 @@ function Appproject() {
     },
     {
       cardimg:curdi,
-  cardname:"Mern stack Curd",
+      cardname:"Mern stack Curd",
       carddes:"A web application using MongoDB, Express, React, and Node.js that enables users to manage student records, including adding, viewing, updating, and deleting student information..",
       livebtn:curdl,
       frontbtn:curdf,
