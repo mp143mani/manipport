@@ -8,7 +8,7 @@ import Favicon from "react-favicon";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Favicon url="https://th.bing.com/th/id/OIP.rZi6BfE1_oSocXmY7kedlQHaHa?pid=ImgDet&rs=1" />
+    <Favicon url="https://icon-library.com/images/letter-m-icon/letter-m-icon-4.jpg" />
     <App />
   </React.StrictMode>
 );
