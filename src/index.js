@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Favicon from "react-favicon";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Favicon url="https://th.bing.com/th/id/OIP.rZi6BfE1_oSocXmY7kedlQHaHa?pid=ImgDet&rs=1" />
     <App />
   </React.StrictMode>
 );

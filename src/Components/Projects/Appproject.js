@@ -5,7 +5,11 @@ import crm from "../../assets/image/crm.jpg";
 import veg from "../../assets/image/veg-combo-1.jpg"
 import curdi from "../../assets/image/curd.png"
 
+
 function Appproject() {
+
+  
+
   let mani1 = "https://adorable-griffin-ca3ebe.netlify.app/";
   let mani2 = "https://github.com/mp143mani/manitfronend.git";
   let mani3 = "https://github.com/mp143mani/manitbackend.git";
@@ -25,7 +29,10 @@ function Appproject() {
   let curdf="https://github.com/mp143mani/fend.git";
   let curdb="https://github.com/mp143mani/bend.git";
   let curdbl="https://bend-stna.onrender.com/";
+
   const projectdata = [
+
+    
     {
       cardimg: manilogo,
       cardname: "ManitechWorld",
