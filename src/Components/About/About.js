@@ -120,7 +120,7 @@ function About() {
               <br />
             </h6>
             <ul className="list-styled">
-              <li>I am UI UX Designer</li>
+              
               <li>I am Full stack development</li>
               <li>Interactive Front End as per the design</li>
               <li>Redux for State Management</li>
