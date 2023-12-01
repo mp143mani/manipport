@@ -96,7 +96,7 @@
 
 
 import React from "react";
-import myimage from "../../assets/image/18TUEE103.jpeg";
+import myimage from "../../assets/image/myyy.jpg";
 
 function About() {
   return (
