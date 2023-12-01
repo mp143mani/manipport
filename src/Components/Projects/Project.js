@@ -23,7 +23,7 @@ function Project({ projectdata }) {
               <a
                 href={projectdata.frontbtn}
                 target="_blank"
-                className="btn btn-primary my-2"
+                className="btn btn-success my-2"
               >
                 Frontend
               </a>
