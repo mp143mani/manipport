@@ -1,7 +1,12 @@
+
+import manilogo from "../../assets/image/Logo.0268ac4ba8f24691976d.png";
+import crm from "../../assets/image/crm.jpg";
+import veg from "../../assets/image/veg-combo-1.jpg"
+import curdi from "../../assets/image/curd.png"
 import React from "react";
 import "./Project.css";
 
-function Project({ projectdata }) {
+const Project = ({ projectdata }) => {
   return (
     <div className="card horizontal-card my-4">
       <div className="row no-gutters">
@@ -16,6 +21,7 @@ function Project({ projectdata }) {
               <a
                 href={projectdata.livebtn}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-success my-2"
               >
                 Live Demo
@@ -23,6 +29,7 @@ function Project({ projectdata }) {
               <a
                 href={projectdata.frontbtn}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-success my-2"
               >
                 Frontend
@@ -30,14 +37,15 @@ function Project({ projectdata }) {
               <a
                 href={projectdata.backbtn}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-success my-2"
               >
                 Backend
               </a>
-
               <a
                 href={projectdata.backbtnl}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-success my-2"
               >
                 Backend Live
@@ -48,6 +56,88 @@ function Project({ projectdata }) {
       </div>
     </div>
   );
-}
+};
 
-export default Project;
+const Appproject = () => {
+  
+
+  // Define URLs for projects
+  const mani1 = "https://adorable-griffin-ca3ebe.netlify.app/";
+  const mani2 = "https://github.com/mp143mani/manitfronend.git";
+  const mani3 = "https://github.com/mp143mani/manitbackend.git";
+  const manibackl = "https://backendmanitech.onrender.com/";
+
+  const crml = "https://crmcrm.netlify.app/";
+  const crmf = "https://github.com/mp143mani/crmfront.git";
+  const crmb = "https://github.com/mp143mani/crmback.git";
+  const crmbl = "https://backendcrm-66ya.onrender.com/";
+
+  const vegl = "https://vegetablemart.netlify.app/";
+  const vegf = "https://github.com/mp143mani/pfrontend.git";
+  const vegb = "https://github.com/mp143mani/pbackend.git";
+  const vegbl = "https://backendp-n8dl.onrender.com/";
+
+  const curdl = "https://master--fastidious-daifuku-5a1729.netlify.app/";
+  const curdf = "https://github.com/mp143mani/fend.git";
+  const curdb = "https://github.com/mp143mani/bend.git";
+  const curdbl = "https://bend-stna.onrender.com/";
+
+  const projectdata = [
+    {
+      cardimg: manilogo,
+      cardname: "ManitechWorld",
+      carddes:
+        "This project is an online institution dashboard for Coordinator, teacher, and student management system, covered by MongoDB, Express, React, and Node.js",
+      livebtn: mani1,
+      frontbtn: mani2,
+      backbtn: mani3,
+      backbtnl: manibackl
+    },
+    {
+      cardimg: crm,
+      cardname: "Customer Relationship Management System",
+      carddes:
+        "A CRM system designed to help businesses manage and enhance interactions and relationships with customers, developed using MongoDB, Express, React, and Node.js",
+      livebtn: crml,
+      frontbtn: crmf,
+      backbtn: crmb,
+      backbtnl: crmbl
+    },
+    {
+      cardimg: veg,
+      cardname: "Kmart",
+      carddes:
+        "An online vegetable shop providing a convenient way to access high-quality produce, developed using MongoDB, Express, React, and Node.js",
+      livebtn: vegl,
+      frontbtn: vegf,
+      backbtn: vegb,
+      backbtnl: vegbl
+    },
+    {
+      cardimg: curdi,
+      cardname: "MERN Stack Curd",
+      carddes:
+        "A web application enabling users to manage student records using MongoDB, Express, React, and Node.js",
+      livebtn: curdl,
+      frontbtn: curdf,
+      backbtn: curdb,
+      backbtnl: curdbl
+    }
+    // Add other project data here...
+  ];
+
+  return (
+    <div className="container-fluid col-10 ji">
+      <section id="project">
+        <h1 className="head">My Projects</h1>
+        <div className="row">
+          {projectdata.map((e, i) => {
+            return <Project projectdata={e} key={i} />;
+          })}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Appproject;
