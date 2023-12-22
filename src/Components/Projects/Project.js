@@ -59,7 +59,7 @@ const Project = ({ projectdata }) => {
 };
 
 const Appproject = () => {
-  
+
 
   // Define URLs for projects
   const mani1 = "https://adorable-griffin-ca3ebe.netlify.app/";
