@@ -7,7 +7,7 @@ import "./Profile.css";
 export default function Profile() {
   let navigate = useNavigate();
   const [typei] = useTypewriter({
-    words: ["Full stack Developer"],
+    words: ["Electrical and Electronics Engineering","FrontEnd Developer","React Developer"],
     loop: {},
     typeSpeed: 150,
     delaySpeed: 50,
