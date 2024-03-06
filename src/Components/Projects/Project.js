@@ -1,8 +1,7 @@
-
 import manilogo from "../../assets/image/Logo.0268ac4ba8f24691976d.png";
 import crm from "../../assets/image/crm.jpg";
 import veg from "../../assets/image/veg-combo-1.jpg"
-import curdi from "../../assets/image/curd.png"
+import Port from "../../assets/image/port.jpg";
 import React from "react";
 import "./Project.css";
 
@@ -18,38 +17,46 @@ const Project = ({ projectdata }) => {
             <h2 className="card-title">{projectdata.cardname}</h2>
             <p className="card-text">{projectdata.carddes}</p>
             <div className="buttons">
-              <a
-                href={projectdata.livebtn}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-success my-2"
-              >
-                Live Demo
-              </a>
-              <a
-                href={projectdata.frontbtn}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-success my-2"
-              >
-                Frontend
-              </a>
-              <a
-                href={projectdata.backbtn}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-success my-2"
-              >
-                Backend
-              </a>
-              <a
-                href={projectdata.backbtnl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-success my-2"
-              >
-                Backend Live
-              </a>
+              {projectdata.livebtn && (
+                <a
+                  href={projectdata.livebtn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success my-2"
+                >
+                  Live Demo
+                </a>
+              )}
+              {projectdata.frontbtn && (
+                <a
+                  href={projectdata.frontbtn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success my-2"
+                >
+                  Frontend
+                </a>
+              )}
+              {projectdata.backbtn && (
+                <a
+                  href={projectdata.backbtn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success my-2"
+                >
+                  Backend
+                </a>
+              )}
+              {projectdata.backbtnl && (
+                <a
+                  href={projectdata.backbtnl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success my-2"
+                >
+                  Backend Live
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -59,7 +66,6 @@ const Project = ({ projectdata }) => {
 };
 
 const Appproject = () => {
-
 
   // Define URLs for projects
   const mani1 = "https://adorable-griffin-ca3ebe.netlify.app/";
@@ -77,10 +83,10 @@ const Appproject = () => {
   const vegb = "https://github.com/mp143mani/pbackend.git";
   const vegbl = "https://backendp-n8dl.onrender.com/";
 
-  const curdl = "https://master--fastidious-daifuku-5a1729.netlify.app/";
-  const curdf = "https://github.com/mp143mani/fend.git";
-  const curdb = "https://github.com/mp143mani/bend.git";
-  const curdbl = "https://bend-stna.onrender.com/";
+ 
+
+  const portl ="https://manivenkatrajm.netlify.app/";
+  const portf="https://github.com/mp143mani/manipport.git";
 
   const projectdata = [
     {
@@ -114,16 +120,15 @@ const Appproject = () => {
       backbtnl: vegbl
     },
     {
-      cardimg: curdi,
-      cardname: "MERN Stack Curd",
+      cardimg: Port,
+      cardname: "My portfolio",
       carddes:
         "A web application enabling users to manage student records using MongoDB, Express, React, and Node.js",
-      livebtn: curdl,
-      frontbtn: curdf,
-      backbtn: curdb,
-      backbtnl: curdbl
+      livebtn: portl,
+      frontbtn: portf,
+      backbtn: false,
+      backbtnl: false
     }
-    // Add other project data here...
   ];
 
   return (
