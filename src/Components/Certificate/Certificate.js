@@ -14,6 +14,18 @@ import Autocadpdf from '../../assets/pdf/internshala/AutoCAD Training - Certific
 
 import Autocad3d from '../../assets/image/autocad 3d.png'
 import Autocad3dpdf from '../../assets/pdf/internshala/AutoCAD 3D Training - Certificate of Completion (2).pdf';
+
+import xl from '../../assets/image/xl.jpg';
+import xlpsf from '../../assets/pdf/internshala/Advanced Excel Training - Certificate of Completion.pdf'
+
+
+import react from '../../assets/image/reactlogo.png';
+import reactpdf from '../../assets/pdf/internshala/React Training - Certificate of Completion.pdf'
+
+
+import plc from '../../assets/image/plc.jpg';
+import plcpdf from '../../assets/pdf/internshala/PLC Programming Training - Certificate of Completion.pdf';
+
 function Appcertificate() {
   const [activeTab, setActiveTab] = useState('guvi');
 
@@ -80,15 +92,39 @@ function Appcertificate() {
       category: 'internshala',
       cradimg: Autocad,
       cardname: 'Autocad',
-      cardbtn: Autocadpdf, // Assuming this is the PDF link for internshala
+      cardbtn: Autocadpdf,
     },
     {
       category: 'internshala',
       cradimg: Autocad3d,
       cardname: 'Autocad 3D',
-      cardbtn: Autocad3dpdf, // Assuming this is the PDF link for internshala
+      cardbtn: Autocad3dpdf,
     },
-    // Add more certificates for other categories if needed
+    {
+      category: 'internshala',
+      cradimg: xl,
+      cardname: 'Microsoft Excel',
+      cardbtn: xlpsf,
+    },
+    {
+      category: 'internshala',
+      cradimg: react,
+      cardname: 'React',
+      cardbtn: reactpdf,
+    },
+    {
+      category: 'internshala',
+      cradimg: plc,
+      cardname: 'PLC Programming',
+      cardbtn: plcpdf,
+    },
+    // {
+    //   category: 'Udemy',
+    //   cradimg: plc,
+    //   cardname: 'PLC Programming',
+    //   cardbtn: plcpdf,
+    // }
+
   ];
 
   const filteredCertificates = certificateData.filter(certificate => certificate.category === activeTab);
@@ -99,8 +135,8 @@ function Appcertificate() {
         <h1 className="head">My Achievement</h1>
         <div className="tab">
           <button className={`tablinks ${activeTab === 'guvi' ? 'active' : ''}`} onClick={() => handleTabChange('guvi')}>Guvi</button>
-          <button className={`tablinks ${activeTab === 'internshala' ? 'active' : ''}`} onClick={() => handleTabChange('internshala')}>internshala</button>
-          {/* Add more tab buttons for other categories if needed */}
+          <button className={`tablinks ${activeTab === 'internshala' ? 'active' : ''}`} onClick={() => handleTabChange('internshala')}>Internshala</button>
+       
         </div>
         <div className="row">
           {filteredCertificates.map((certificate, index) => (

@@ -1,37 +1,36 @@
-/* Tab List Styles */
-h1 {
+Tab List Styles h1 {
   margin-top: 100px;
   text-align: center;
 }
 
 .tab {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #909090;
   margin-bottom: 20px;
   text-align: center;
   border-radius: 50px;
-  justify-content: flex-start;
-  /* Adjusted to start from the left */
-  /* Center align the text within the tab buttons */
+  justify-content: last baseline;
+  /* Adjusted to evenly space the tab buttons */
 }
 
 .tab button {
   background-color: inherit;
   border: none;
-  outline: none;
+  outline: pink;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: px 15px;
   /* Reduced padding size */
   transition: 0.3s;
   font-size: 18px;
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  border-bottom: 5px solid #007bff;
+  transition: all .5s;
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: #e6e0e0;
 }
 
 .tab button:first-child {
@@ -53,7 +52,7 @@ h1 {
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #007bff;
 }
 
 .card .inner {
@@ -94,4 +93,9 @@ h1 {
 
 .card .btn:hover {
   background-color: #d30dda;
+}
+
+.navbar-nav li.nav-item:hover {
+  border-bottom: 2px solid #007bff;
+  /* Change the color to your preferred hover color */
 }
