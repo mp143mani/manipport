@@ -40,7 +40,7 @@ function Navbar() {
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 ">
                 <li className="nav-item " onClick={() => navigate('/home')}>
                   <a
-                    className="nav-link  off"
+                    className="nav-link"
                     aria-current="page"
                     
                   >
@@ -48,21 +48,21 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item" onClick={() => navigate('/about')}>
-                  <a className="nav-link off">About</a>
+                  <a className="nav-link ">About</a>
                 </li>
                 
                 <li className="nav-item" onClick={() => navigate('/project')}>
-                  <a className="nav-link  off">Projects</a>
+                  <a className="nav-link  ">Projects</a>
                 </li>
 
                 <li className="nav-item" onClick={() => navigate('/skill')}>
-                  <a className="nav-link  off">Skills</a>
+                  <a className="nav-link">Skills</a>
                 </li>
                 <li className="nav-item" onClick={() => navigate('/certificate')}>
-                  <a className="nav-link  off">Certificate</a>
+                  <a className="nav-link">Certificate</a>
                 </li>
                 <li className="nav-item" onClick={() => navigate('/contact')}>
-                  <a className="nav-link  off">Contact</a>
+                  <a className="nav-link">Contact</a>
                 </li>
               </ul>
             </div>
