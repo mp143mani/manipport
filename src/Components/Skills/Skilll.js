@@ -3,14 +3,24 @@ import React from "react";
 function AppSkilll() {
   const skills = [
     {
+      title: "FrontEnd Technologies",
+      percentage: "80",
+      width: "80",
+    },
+    {
+      title: "BackEnd Technologies",
+      percentage: "40",
+      width: "40",
+    },
+    {
       title: "HTML",
       percentage: "70",
       width: "70",
     },
     {
       title: "CSS",
-      percentage: "40",
-      width: "40",
+      percentage: "80",
+      width: "80",
     },
     {
       title: "Bootstrap",
@@ -27,20 +37,11 @@ function AppSkilll() {
       percentage: "88",
       width: "88",
     },
-    {
-      title: "MySQl",
-      percentage: "50",
-      width: "50",
-    },
-    {
-      title: "MongoDB",
-      percentage: "60",
-      width: "60",
-    },
+
     {
       title: "NodeJS",
-      percentage: "50",
-      width: "50",
+      percentage: "40",
+      width: "40",
     },
   ];
 

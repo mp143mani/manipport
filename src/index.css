@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Poppins Medium";
   font-style: normal;
@@ -109,7 +110,7 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid #ff5823;
+  border: 2px solid #2369ff;
   background-color: #abdb4b;
 }
 
@@ -134,3 +135,6 @@ body ::-webkit-scrollbar-thumb {
   transform: translateY(80px);
   transition: all 0.8s ease;
 }
+
+
+

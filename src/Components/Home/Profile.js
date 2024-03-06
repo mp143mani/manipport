@@ -67,7 +67,7 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-          <button className="btn primary-btn" onClick={() => window.location.href = 'mailto:your.email@example.com'}> Hire Me </button>
+          <button className="btn primary-btn" onClick={() => window.location.href = 'mailto:recipient@example.com'}> Hire Me </button>
 
             <a href="https://drive.google.com/file/d/1wNo0wTkwsW6fkYwuP8YoEEKjzI15VBGe/view?usp=sharing" target="_blank" download="mani ehizcv.pdf" rel="noreferrer">
               <button className="btn primary-btn" >Download</button>

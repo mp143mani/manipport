@@ -1,39 +1,97 @@
-.head{
-    text-align: center;
-    padding-top:145px;
-    margin-bottom: 20px;
+/* Tab List Styles */
+h1 {
+  margin-top: 100px;
+  text-align: center;
 }
 
-.bt{
-    width: 100%;
-    
-    
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 50px;
+  justify-content: flex-start;
+  /* Adjusted to start from the left */
+  /* Center align the text within the tab buttons */
 }
-.btn:hover{
-  background-image: linear-gradient(90deg, rgb(0, 123, 255), rgb(234, 0, 255))!important;
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  /* Reduced padding size */
+  transition: 0.3s;
+  font-size: 18px;
 }
-.card  {
-    background-color:#f7f7f7;
-    
-  
-  }
-  #projects{
-    padding-top: 100px;
-  }
 
- 
-  
-  .card img{
-    height: 300px;
-    transition: 2s;
-  }
+.tab button:hover {
+  background-color: #ddd;
+}
 
-  .inner{
-    overflow: hidden;
-  }
+.tab button.active {
+  background-color: #ccc;
+}
 
-  .card img:hover{
-    transform:scale(.9);
-    
-    
-  }
+.tab button:first-child {
+  margin-left: 0;
+  /* Remove left margin for the first button */
+}
+
+.tab button:last-child {
+  margin-right: 0;
+  /* Remove right margin for the last button */
+}
+
+/* Certificate Card Styles */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .inner {
+  text-align: center;
+}
+
+.card .inner img {
+  max-width: 500px;
+  height: 300px;
+}
+
+.card .card-body {
+  padding: 20px;
+  text-align: center;
+  /* Center align the text within the card body */
+}
+
+.card .card-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  /* Center align the card titles */
+}
+
+.card .btn {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  /* Center align the text within the buttons */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.card .btn:hover {
+  background-color: #d30dda;
+}
