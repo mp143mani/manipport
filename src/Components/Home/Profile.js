@@ -19,7 +19,7 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 onClick={() => navigate("https://github.com/mp143mani")}
               >
                 <i
@@ -29,7 +29,7 @@ export default function Profile() {
               </a>
               <a
                 href="https://www.linkedin.com/in/manivenktraj-m-560b20287/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i
                   className="fa-brands fa-linkedin fa-2x"
@@ -67,8 +67,9 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn"> Hire Me </button>
-            <a href="https://drive.google.com/file/d/1wNo0wTkwsW6fkYwuP8YoEEKjzI15VBGe/view?usp=sharing" target="_blank" download="mani ehizcv.pdf">
+          <button className="btn primary-btn" onClick={() => window.location.href = 'mailto:your.email@example.com'}> Hire Me </button>
+
+            <a href="https://drive.google.com/file/d/1wNo0wTkwsW6fkYwuP8YoEEKjzI15VBGe/view?usp=sharing" target="_blank" download="mani ehizcv.pdf" rel="noreferrer">
               <button className="btn primary-btn" >Download</button>
             </a>
           </div>

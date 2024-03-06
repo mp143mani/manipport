@@ -122,8 +122,7 @@ const Appproject = () => {
     {
       cardimg: Port,
       cardname: "My portfolio",
-      carddes:
-        "A web application enabling users to manage student records using MongoDB, Express, React, and Node.js",
+      carddes:"This my frontend developer portfolio! With expertise in ReactJS, I design captivating user interfaces. Let's collaborate to craft seamless web experiences.",
       livebtn: portl,
       frontbtn: portf,
       backbtn: false,
