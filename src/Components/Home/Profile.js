@@ -1,17 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-// import Typical from "react-typical";
+import { useTypewriter } from "react-simple-typewriter";
 import "./Profile.css";
 
 export default function Profile() {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const [typei] = useTypewriter({
-    words: ["Electrical Engineering","FrontEnd Developer","React Developer"],
-    loop: {},
+    words: ["Electrical Engineering", "FrontEnd Developer", "React Developer"],
+    loop: true, // Specify loop as true to continuously loop through the words
     typeSpeed: 150,
     delaySpeed: 50,
   });
+
   return (
     <div className="maincontainer" id="home">
       <div className="profile2">
@@ -19,29 +19,24 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a
-                target="_blank" rel="noreferrer"
-                onClick={() => navigate("https://github.com/mp143mani")}
+                href="https://github.com/mp143mani"
+                target="_blank"
+                rel="noreferrer"
               >
-                <i
-                  className="fab fa-github fa-2x"
-                  style={{ color: "#c2c2c2" }}
-                ></i>
+                <i className="fab fa-github fa-2x" style={{ color: "#c2c2c2" }}></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/manivenktraj-m-560b20287/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
-                <i
-                  className="fa-brands fa-linkedin fa-2x"
-                  style={{ color: "#0A66C2" }}
-                />
+                <i className="fab fa-linkedin fa-2x" style={{ color: "#0A66C2" }}></i>
               </a>
             </div>
           </div>
 
           <div className="profile-details-name">
             <span className="primary-text">
-              {" "}
               Hello, I'm <span className="highlighted-text">Manivenkatraj</span>
             </span>
           </div>
@@ -49,28 +44,28 @@ export default function Profile() {
             <span className="primary-text">
               <h1>
                 I'm a
-                <span
-                  style={{
-                    fontWeight: "bold",
-                    color: "green",
-                    paddingLeft: "25px",
-                  }}
-                >
+                <span style={{ fontWeight: "bold", color: "green", paddingLeft: "25px" }}>
                   {typei}
                 </span>
               </h1>
 
               <span className="profile-role-info">
-                I have always had a great desire, becoming more of a person
-                where I can find challenges in the work environment
+                I have always had a great desire, becoming more of a person where I can find challenges in the work environment
               </span>
             </span>
           </div>
           <div className="profile-options">
-          <button className="btn primary-btn" onClick={() => window.location.href = 'mailto:recipient@example.com'}> Hire Me </button>
+            <button className="btn primary-btn" onClick={() => window.location.href = 'mailto:recipient@example.com'}>
+              Hire Me
+            </button>
 
-            <a href="https://drive.google.com/file/d/1wNo0wTkwsW6fkYwuP8YoEEKjzI15VBGe/view?usp=sharing" target="_blank" download="mani ehizcv.pdf" rel="noreferrer">
-              <button className="btn primary-btn" >Download</button>
+            <a
+              href="https://drive.google.com/file/d/1wNo0wTkwsW6fkYwuP8YoEEKjzI15VBGe/view?usp=sharing"
+              target="_blank"
+              download="mani ehizcv.pdf"
+              rel="noreferrer"
+            >
+              <button className="btn primary-btn">Download</button>
             </a>
           </div>
         </div>
@@ -83,7 +78,7 @@ export default function Profile() {
         <div className="footer-parent">
           <img
             src={require("../../assets/Home/shape-bg.png")}
-            alt="no internet conection"
+            alt="no internet connection"
           />
         </div>
       </div>
