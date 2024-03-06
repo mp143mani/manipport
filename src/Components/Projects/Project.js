@@ -68,7 +68,7 @@ const Project = ({ projectdata }) => {
 const Appproject = () => {
 
   // Define URLs for projects
-  const mani1 = "https://adorable-griffin-ca3ebe.netlify.app/";
+  const mani1 = "https://mtanitechinstitution.netlify.app/";
   const mani2 = "https://github.com/mp143mani/manitfronend.git";
   const mani3 = "https://github.com/mp143mani/manitbackend.git";
   const manibackl = "https://backendmanitech.onrender.com/";
