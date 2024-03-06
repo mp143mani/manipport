@@ -1,186 +1,197 @@
 .maincontainer {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: 10%;
-    min-height: fit-content;
-  }
-  
-  .profile2 {
-    display: flex;
-    align-items: center;
-    color: aliceblue;
-  }
-  
-  .profile-details {
-    font-size: 24px;
-    font-family: Poppins SemiBold;
-  }
-  
-  .profile-details-role {
-    display: flex;
-    flex-direction: column;
-    margin: 14px 0 24px 0;
-  }
-  
-  .profile-details-role h1 {
-    font-size: 40px;
-    font-family: cursive;
-  }
-  
-  .primary-text {
-    color: aliceblue;
-  }
-  
-  .highlighted-text {
-    color: var(--dark-orange);
-  }
-  
-  .profile-role-info {
-    font-size: 19px;
-    margin: 5px 0 0 0;
-    font-family: "Poppins Light";
-  }
-  
-  .profile-options .highlighted-btn {
-    margin: 0 0 0 28px;
-  }
-  
-  .profile-options .highlighted-btn:hover {
-    margin: 0 0 0 28px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(67, 162, 4);
-  }
-  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+}
+
+.profile2 {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+
+.profile-details {
+  font-size: 24px;
+  font-family: Poppins SemiBold;
+}
+
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 0 24px 0;
+}
+
+.profile-details-role h1 {
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.primary-text {
+  color: aliceblue;
+}
+
+.highlighted-text {
+  color: var(--dark-orange);
+}
+
+.profile-role-info {
+  font-size: 19px;
+  margin: 5px 0 0 0;
+  font-family: "Poppins Light";
+}
+
+.profile-options .highlighted-btn {
+  margin: 0 0 0 28px;
+}
+
+.profile-options .highlighted-btn:hover {
+  margin: 0 0 0 28px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(67, 162, 4);
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px var(--white);
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../assets/Home/18TUEE103.jpeg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-picture-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+.colz .colz-icon i {
+  color: white;
+
+  padding-top: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 21px;
+}
+
+.colz .colz-icon i:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 1110px) {
   .profile-picture {
+    margin: 0 0 0 80px;
+  }
+
+  .profile-details-name {
+    font-size: 25px;
+  }
+
+  .profile-details-role .primary-text {
+    font-size: 12px;
+  }
+
+  .profile-options .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+
+  .profile2 {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+
+  .profile-options {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
-    border-radius: 50%;
-    height: 380px;
-    width: 380px;
-    margin: 0 0px 0 100px;
-  }
-  
-  .profile-picture-background {
-    height: 92%;
-    width: 92%;
-    background-image: url("../../assets/Home/18TUEE103.jpeg");
-    background-size: cover;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .profile-picture-background:hover {
-    transform: scale(1.07);
-    transition: 1s ease-out;
-  }
-  
-  .colz .colz-icon i {
-    color: white;
-    padding: 20px;
-    padding-left: 0px;
-  }
-  
-  .colz .colz-icon i:hover {
-    transform: scale(1.5);
-  }
-  
-  @media screen and (max-width: 1110px) {
-    .profile-picture {
-      margin: 0 0 0 80px;
-    }
-    .profile-details-name {
-      font-size: 25px;
-    }
-    .profile-details-role .primary-text {
-      font-size: 12px;
-    }
-    .profile-options .btn {
-      width: 120px;
-      padding: 11px 0;
-      z-index: 700;
-    }
-  }
-  
-  @media screen and (max-width: 910px) {
-    .profile-picture {
-      height: 320px;
-      width: 320px;
-      margin: 0 0 0 4px;
-    }
-  }
-  
-  @media screen and (max-width: 810px) {
-    .profile-picture {
-      margin: 0 !important;
-    }
-    .profile2 {
-      flex-direction: column-reverse;
-      margin: 40px 0 0 0;
-    }
-    .profile-options {
-      display: flex;
-      justify-content: space-between;
-    }
-    .profile-details {
-      margin: 25px 0 0;
-    }
-    .profile-options .highlighted-btn {
-      margin: 0 !important;
-    }
-    .profile-options .profile-details-role {
-      text-align: center;
-    }
-  }
-  
-  @media screen and (max-width: 375px) {
-    .profile-picture {
-      height: 275px;
-      width: 275px;
-      margin-top: -90px;
-    }
-    .profile-details {
-      width: 90%;
-    }
-  }
-  
-  .maincontainer {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-  
-    min-height: 670px;
-    background-image: url("../../assets/Home/blacj.png");
   }
-  
-  .footer-container {
-    height: 17.8%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+
+  .profile-details {
+    margin: 25px 0 0;
   }
-  
+
+  .profile-options .highlighted-btn {
+    margin: 0 !important;
+  }
+
+  .profile-options .profile-details-role {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+
+  .profile-details {
+    width: 90%;
+  }
+}
+
+.maincontainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 670px;
+  background-image: url("../../assets/Home/blacj.png");
+}
+
+.footer-container {
+  height: 17.8%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-parent {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+}
+
+.footer-parent img {
+  max-width: 100%;
+  height: 130px;
+}
+
+@media only screen and (max-width: 1110px) {
   .footer-parent {
-    width: 100%;
-    height: 100%;
-    max-width: 1920px;
+    display: flex;
+    align-items: flex-end;
   }
-  
-  .footer-parent img {
-    max-width: 100%;
-    height: 130px;
-  }
-  
-  @media only screen and (max-width: 1110px) {
-    .footer-parent {
-      display: flex;
-      align-items: flex-end;
-    }
-  }
-  
+}
