@@ -6,10 +6,10 @@ h1 {
 
 .tab {
   overflow: hidden;
-  background-color: #F6F7F8;
+  background-color: #dcefe0;
   margin-bottom: 20px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 10px;
   justify-content: space-evenly;
   /* Adjusted to evenly space the tab buttons */
 }
@@ -26,11 +26,13 @@ h1 {
 }
 
 .tab button:hover {
-  background-color: #646464;
+  background-color: #e3e3e3;
 }
 
 .tab button.active {
-  background-color: #E6F7E9;
+  background-color: #cdcdcd;
+  border-bottom: 7px solid blue;
+  transition: all .8;
 }
 
 .tab button:first-child {
