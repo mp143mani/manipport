@@ -88,18 +88,18 @@ function Appcertificate() {
       cardname: 'NodeJS',
       cardbtn: nodejs,
     },
-    {
-      category: 'internshala',
-      cradimg: Autocad,
-      cardname: 'Autocad',
-      cardbtn: Autocadpdf,
-    },
-    {
-      category: 'internshala',
-      cradimg: Autocad3d,
-      cardname: 'Autocad 3D',
-      cardbtn: Autocad3dpdf,
-    },
+    // {
+    //   category: 'internshala',
+    //   cradimg: Autocad,
+    //   cardname: 'Autocad',
+    //   cardbtn: Autocadpdf,
+    // },
+    // {
+    //   category: 'internshala',
+    //   cradimg: Autocad3d,
+    //   cardname: 'Autocad 3D',
+    //   cardbtn: Autocad3dpdf,
+    // },
     // {
     //   category: 'internshala',
     //   cradimg: xl,
