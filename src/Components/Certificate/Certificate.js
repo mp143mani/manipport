@@ -112,12 +112,12 @@ function Appcertificate() {
       cardname: 'React',
       cardbtn: reactpdf,
     },
-    {
-      category: 'internshala',
-      cradimg: plc,
-      cardname: 'PLC Programming',
-      cardbtn: plcpdf,
-    },
+    // {
+    //   category: 'internshala',
+    //   cradimg: plc,
+    //   cardname: 'PLC Programming',
+    //   cardbtn: plcpdf,
+    // },
     // {
     //   category: 'Udemy',
     //   cradimg: plc,
