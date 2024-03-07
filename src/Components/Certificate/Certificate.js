@@ -100,12 +100,12 @@ function Appcertificate() {
       cardname: 'Autocad 3D',
       cardbtn: Autocad3dpdf,
     },
-    {
-      category: 'internshala',
-      cradimg: xl,
-      cardname: 'Microsoft Excel',
-      cardbtn: xlpsf,
-    },
+    // {
+    //   category: 'internshala',
+    //   cradimg: xl,
+    //   cardname: 'Microsoft Excel',
+    //   cardbtn: xlpsf,
+    // },
     {
       category: 'internshala',
       cradimg: react,
