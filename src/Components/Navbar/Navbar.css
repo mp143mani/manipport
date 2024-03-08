@@ -16,7 +16,7 @@
 
 .navbar-nav li.nav-item:hover {
   border-bottom: 5px solid #ffffff;
-  transition: all .4s;
+  transition: calc(.7s)
 }
 
 .offcanvas-body {

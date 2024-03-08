@@ -30,9 +30,9 @@ h1 {
 }
 
 .tab button.active {
-  background-color: #cdcdcd;
+  background-color: #ffffff;
   border-bottom: 7px solid blue;
-  transition: all .8;
+  transition: calc(.7s)
 }
 
 .tab button:first-child {
