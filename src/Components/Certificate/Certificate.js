@@ -26,6 +26,11 @@ import reactpdf from '../../assets/pdf/internshala/React Training - Certificate 
 import plc from '../../assets/image/plc.jpg';
 import plcpdf from '../../assets/pdf/internshala/PLC Programming Training - Certificate of Completion.pdf';
 
+import udemy from '../../assets/image/uiux.jpg';
+import udemypdf from '../../assets/pdf/udemyuiux.pdf';
+
+import uiux from '../../assets/image/ui.jpg';
+import uipdf from '../../assets/pdf/uiuxintershala.pdf';
 function Appcertificate() {
   const [activeTab, setActiveTab] = useState('guvi');
 
@@ -100,12 +105,12 @@ function Appcertificate() {
     //   cardname: 'Autocad 3D',
     //   cardbtn: Autocad3dpdf,
     // },
-    // {
-    //   category: 'internshala',
-    //   cradimg: xl,
-    //   cardname: 'Microsoft Excel',
-    //   cardbtn: xlpsf,
-    // },
+    {
+      category: 'internshala',
+      cradimg: uiux,
+      cardname: 'UI UX',
+      cardbtn: uipdf,
+    },
     {
       category: 'internshala',
       cradimg: react,
@@ -118,12 +123,12 @@ function Appcertificate() {
     //   cardname: 'PLC Programming',
     //   cardbtn: plcpdf,
     // },
-    // {
-    //   category: 'Udemy',
-    //   cradimg: plc,
-    //   cardname: 'PLC Programming',
-    //   cardbtn: plcpdf,
-    // }
+    {
+      category: 'Udemy',
+      cradimg: udemy,
+      cardname: 'Complete Web & Mobile Designer: UI/UX, Figma, +more',
+      cardbtn: udemypdf,
+    }
 
   ];
 
@@ -136,7 +141,7 @@ function Appcertificate() {
         <div className="tab">
           <button className={`tablinks ${activeTab === 'guvi' ? 'active' : ''}`} onClick={() => handleTabChange('guvi')}>Guvi</button>
           <button className={`tablinks ${activeTab === 'internshala' ? 'active' : ''}`} onClick={() => handleTabChange('internshala')}>Internshala</button>
-       
+          <button className={`tablinks ${activeTab === 'Udemy' ? 'active' : ''}`} onClick={() => handleTabChange('Udemy')}>Udemy</button>
         </div>
         <div className="row">
           {filteredCertificates.map((certificate, index) => (
