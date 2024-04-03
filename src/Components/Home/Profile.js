@@ -32,6 +32,16 @@ export default function Profile() {
               >
                 <i className="fab fa-linkedin fa-2x" style={{ color: "#0A66C2" }}></i>
               </a>
+
+
+              <a
+                href="https://wa.me/916379567674?text=!Hi Manivenkatraj M"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-brands fa-whatsapp fa-2x" style={{color: 'green'}} />
+
+              </a>
             </div>
           </div>
 
@@ -68,7 +78,7 @@ export default function Profile() {
               <button className="btn primary-btn">Download</button>
             </a>
 
-            <a href="https://wa.me/916379567674?text=hi"><button className="btn primary-btn">WhatsApp</button></a>
+           
           </div>
         </div>
 
