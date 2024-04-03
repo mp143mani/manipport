@@ -67,6 +67,8 @@ export default function Profile() {
             >
               <button className="btn primary-btn">Download</button>
             </a>
+
+            <a href="https://wa.me/916379567674?text=hi"><button className="btn primary-btn">WhatsApp</button></a>
           </div>
         </div>
 
