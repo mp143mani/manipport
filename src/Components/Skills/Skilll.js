@@ -43,6 +43,11 @@ function AppSkilll() {
       percentage: "40",
       width: "40",
     },
+    {
+      title: "Figma",
+      percentage: "90",
+      width: "90",
+    },
   ];
 
   const progressBarStyle = {
