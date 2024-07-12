@@ -15,7 +15,7 @@ function AppSkilll() {
     {
       title: "HTML",
       percentage: "70",
-      width: "70",
+      width: "7",
     },
     {
       title: "CSS",
