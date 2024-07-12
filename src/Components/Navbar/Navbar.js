@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
+  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOffcanvasOpen(!isOffcanvasOpen);
+  };
+
+  const handleItemClick = (path) => {
+    navigate(path);
+    setIsOffcanvasOpen(false); // Close the offcanvas menu when an item is clicked
+  };
 
   return (
     <>
@@ -13,14 +23,12 @@ function Navbar() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
+            onClick={handleToggle}
           >
             <span className="navbar-toggler-icon" />
           </button>
           <div
-            className="offcanvas offcanvas-end d-lg-none"
+            className={`offcanvas offcanvas-end d-lg-none ${isOffcanvasOpen ? 'show' : ''}`}
             tabIndex={-1}
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -32,37 +40,34 @@ function Navbar() {
               <button
                 type="button"
                 className="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
+                onClick={handleToggle}
                 aria-label="Close"
               />
             </div>
             <div className="offcanvas-body ">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 ">
-                <li className="nav-item " onClick={() => navigate('/home')}>
+                <li className="nav-item" onClick={() => handleItemClick('/home')}>
                   <a
-                    className="nav-link  off"
+                    className="nav-link"
                     aria-current="page"
-                    
                   >
                     Home
                   </a>
                 </li>
-                <li className="nav-item" onClick={() => navigate('/about')}>
-                  <a className="nav-link off">About</a>
+                <li className="nav-item" onClick={() => handleItemClick('/about')}>
+                  <a className="nav-link ">About</a>
                 </li>
-                
-                <li className="nav-item" onClick={() => navigate('/project')}>
-                  <a className="nav-link  off">Projects</a>
+                <li className="nav-item" onClick={() => handleItemClick('/project')}>
+                  <a className="nav-link">Projects</a>
                 </li>
-
-                <li className="nav-item" onClick={() => navigate('/skill')}>
-                  <a className="nav-link  off">Skills</a>
+                <li className="nav-item" onClick={() => handleItemClick('/skill')}>
+                  <a className="nav-link">Skills</a>
                 </li>
-                <li className="nav-item" onClick={() => navigate('/certificate')}>
-                  <a className="nav-link  off">Certificate</a>
+                <li className="nav-item" onClick={() => handleItemClick('/certificate')}>
+                  <a className="nav-link">Certificate</a>
                 </li>
-                <li className="nav-item" onClick={() => navigate('/contact')}>
-                  <a className="nav-link  off">Contact</a>
+                <li className="nav-item" onClick={() => handleItemClick('/contact')}>
+                  <a className="nav-link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -70,27 +75,24 @@ function Navbar() {
           {/* Regular navbar for large devices */}
           <div className="collapse navbar-collapse d-lg-block" id="navbarNav">
             <ul className="navbar-nav ms-auto ">
-              
-              <li className="nav-item " onClick={() => navigate('/home')}>
+              <li className="nav-item" onClick={() => handleItemClick('/home')}>
                 <a className="nav-link active mx-3 " aria-current="page">
                   Home
                 </a>
               </li>
-            
-              <li className="nav-item" onClick={() => navigate('/about')}>
+              <li className="nav-item" onClick={() => handleItemClick('/about')}>
                 <a className="nav-link mx-3">About</a>
               </li>
-              
-              <li className="nav-item" onClick={() => navigate('/project')}>
+              <li className="nav-item" onClick={() => handleItemClick('/project')}>
                 <a className="nav-link mx-3">Projects</a>
               </li>
-              <li className="nav-item" onClick={() => navigate('/skill')}>
+              <li className="nav-item" onClick={() => handleItemClick('/skill')}>
                 <a className="nav-link mx-3">Skills</a>
               </li>
-              <li className="nav-item" onClick={() => navigate('/certificate')}>
+              <li className="nav-item" onClick={() => handleItemClick('/certificate')}>
                 <a className="nav-link mx-3">Certificate</a>
               </li>
-              <li className="nav-item" onClick={() => navigate('/contact')}>
+              <li className="nav-item" onClick={() => handleItemClick('/contact')}>
                 <a className="nav-link mx-3">Contact</a>
               </li>
             </ul>

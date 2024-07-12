@@ -98,9 +98,10 @@ body ::-webkit-scrollbar-thumb {
   color: var(--white);
   border: 2px solid linen;
   font-size: 12px;
-  background-color: #c93232;
+  background-color: #080808;
   margin-right: 30px;
 }
+
 /* @media only screen and (max-width: 414px) {
   .primary-btn {
     font-size: 13px;
@@ -109,16 +110,17 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid #ff5823;
-  background-color: #abdb4b;
+  border: 2px solid #2369ff;
+  background-image: linear-gradient(90deg, rgb(0, 123, 255), rgb(234, 0, 255)) !important;
 }
 
 .highlighted-btn {
   color: var(--white);
 
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: #ff23b2;
 }
+
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;

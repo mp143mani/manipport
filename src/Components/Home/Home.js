@@ -1,9 +1,10 @@
 import React from "react";
 import Profile from "./Profile";
 import About from "../About/About";
-import AppSkilll from "../Skills/AppSkilll";
-import Appproject from "../Projects/Appproject";
-import Appcertificate from "../Certificate/Appcertificate";
+import AppSkilll from "../Skills/Skilll";
+import Appproject from "../Projects/Project";
+import Certificate from "../Certificate/Certificate";
+import "./Home.css"
 
 import Contact from "../Contact/Contact";
 
@@ -14,7 +15,7 @@ function Home() {
       <About />
       <Appproject />
       <AppSkilll />
-      <Appcertificate />
+      <Certificate />
       <Contact />
     </div>
   );

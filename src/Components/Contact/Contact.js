@@ -27,7 +27,7 @@ function Contact() {
               <div className="name">
                 <h2 style={{ color: "brown", fontWeight: "bold" }}>Address:</h2>
                 <h5>
-                  Ayakkaranpulam 2 Post, Vedaranyam TK, Nagapatiinam -Dt, Tamil
+                  Ayakkaranpulam 2 Post, Vedaranyam TK, Nagapattinam -Dt, Tamil
                   Nadu, India
                 </h5>
               </div>
